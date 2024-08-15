@@ -1,0 +1,23 @@
+##### 1: Register a payer
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "fullName": "John Doe",
+    "CPF_CNPJ": "000.000.000-00",
+    "email": "payer@email.com",
+    "password": "123456",
+    "type": "payer"
+}
+
+##### 2: Register a payee
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "fullName": "Jane Doe",
+    "CPF_CNPJ": "111.111.111-11",
+    "email": "payee@email.com",
+    "password": "123456",
+    "type": "payee"
+}
